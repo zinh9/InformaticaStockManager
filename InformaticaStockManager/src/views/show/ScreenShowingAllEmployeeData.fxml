@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="600.0" xmlns="http://javafx.com/javafx/22"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controllers.show.ScreenShowingAllEmployeeDataController">
+	<children>
+		<AnchorPane>
+			<children>
+				<ScrollPane
+					style="-fx-border-color: gray; -fx-border-radius: 8;"
+					AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="50.0"
+					AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+					<content>
+						<VBox spacing="10.0">
+							<children>
+								<HBox spacing="20.0">
+									<children>
+										<Label text="Nome Completo:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setFullName" />
+									</children>
+									<VBox.margin>
+										<Insets left="50.0" top="10.0" />
+									</VBox.margin>
+								</HBox>
+								<HBox layoutX="60.0" layoutY="48.0" spacing="20.0">
+									<children>
+										<Label text="Idade:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setAge" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="60.0" layoutY="48.0" spacing="20.0">
+									<children>
+										<Label text="Data de Nascimento:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setDateOfBirth" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="76.0" spacing="20.0">
+									<children>
+										<Label text="CPF:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setCpf" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="104.0" spacing="20.0">
+									<children>
+										<Label text="Gênero:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setGender" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="132.0" spacing="20.0">
+									<children>
+										<Label text="Matrícula:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setRegistration" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="160.0" spacing="20.0">
+									<children>
+										<Label text="Salário:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setSalary" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="188.0" spacing="20.0">
+									<children>
+										<Label text="Tipo de Contrato:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setContractType" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="216.0" spacing="20.0">
+									<children>
+										<Label text="Data de Início de Contrato:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setDateStartContract" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="244.0" spacing="20.0">
+									<children>
+										<Label text="Data de Fim de Contrato:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setDateEndContract" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="272.0" spacing="20.0">
+									<children>
+										<Label text="Cargo:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setPosition" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="300.0" spacing="20.0">
+									<children>
+										<Label text="Tipo de Contato:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setContactType" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="328.0" spacing="20.0">
+									<children>
+										<Label text="Número:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setPhone" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="356.0" spacing="20.0">
+									<children>
+										<Label text="Email:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setEmail" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="384.0" spacing="20.0">
+									<children>
+										<Label text="Endereço:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setFullAddress" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+							</children>
+						</VBox>
+					</content>
+				</ScrollPane>
+				<Button fx:id="updateEmployeeButton" layoutX="510.0" layoutY="350.0"
+					mnemonicParsing="false" text="Atualizar"
+					AnchorPane.rightAnchor="50.0" onAction="#redirectFormToUpdateEmployeeDataScreen">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="deleteEmployeeButton" layoutX="386.0" layoutY="350.0"
+					mnemonicParsing="false" style="-fx-background-color: CF2A27;"
+					text="Deletar" textFill="WHITE" onAction="#deleteEmployee">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Button>
+			</children>
+		</AnchorPane>
+	</children>
+</VBox>

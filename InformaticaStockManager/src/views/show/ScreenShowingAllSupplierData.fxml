@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="600.0" xmlns="http://javafx.com/javafx/22"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controllers.show.ScreenShowingAllSupplierDataController">
+	<children>
+		<AnchorPane>
+			<children>
+				<ScrollPane
+					style="-fx-border-color: gray; -fx-border-radius: 8;"
+					AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="50.0"
+					AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+					<content>
+						<VBox spacing="10.0">
+							<children>
+								<HBox spacing="20.0">
+									<children>
+										<Label text="Nome:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setName" />
+									</children>
+									<VBox.margin>
+										<Insets left="50.0" top="10.0" />
+									</VBox.margin>
+								</HBox>
+								<HBox layoutX="60.0" layoutY="48.0" spacing="20.0">
+									<children>
+										<Label text="Nome do contato:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setContactName" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="76.0" spacing="20.0">
+									<children>
+										<Label text="Registro:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setRegistration" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="104.0" spacing="20.0">
+									<children>
+										<Label text="Notas:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setNotes" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="132.0" spacing="20.0">
+									<children>
+										<Label text="Tipo de contato:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setContactType" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="160.0" spacing="20.0">
+									<children>
+										<Label text="Número:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setPhone" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="188.0" spacing="20.0">
+									<children>
+										<Label text="Email:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setEmail" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+								<HBox layoutX="10.0" layoutY="188.0" spacing="20.0">
+									<children>
+										<Label text="Endereço:">
+											<font>
+												<Font name="System Bold" size="12.0" />
+											</font>
+										</Label>
+										<Label fx:id="setAddress" />
+									</children>
+									<padding>
+										<Insets left="50.0" />
+									</padding>
+								</HBox>
+							</children>
+						</VBox>
+					</content>
+				</ScrollPane>
+				<Button fx:id="updateSupplierButton" layoutX="510.0" layoutY="350.0"
+					mnemonicParsing="false" text="Atualizar"
+					AnchorPane.rightAnchor="50.0" onAction="#redirectFormToUpdateSupplierDataScreen">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="deleteSupplierButton" layoutX="386.0"
+					layoutY="350.0" mnemonicParsing="false" onAction="#deleteSupplier"
+					style="-fx-background-color: CF2A27;" text="Deletar"
+					textFill="WHITE">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Button>
+			</children>
+		</AnchorPane>
+	</children>
+</VBox>
